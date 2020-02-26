@@ -21,7 +21,7 @@ class VendorTest < Minitest::Test
 
   def test_can_items_can_be_stock_and_returned_in_inventory_hash
     assert_equal 0, @vendor.check_stock(@item1)
-    assert_equal 0, @vendor.check_stock(@item_2)
+    assert_equal 0, @vendor.check_stock(@item2)
 
     @vendor.stock(@item1, 30)
     assert_equal ({@item1 => 30}), @vendor.inventory
