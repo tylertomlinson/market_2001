@@ -33,6 +33,6 @@ class Market
   def sorted_item_list
     @vendors.flat_map do |vendor|
       vendor.inventory.map { |item| item[0].name }
-    end.uniq
+    end.sort.uniq
   end
 end
