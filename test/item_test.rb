@@ -1,7 +1,6 @@
 require_relative 'test_helper'
 require './lib/item'
 
-
 class ItemTest < Minitest::Test
 
   def setup
